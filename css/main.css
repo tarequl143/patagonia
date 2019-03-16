@@ -94,6 +94,9 @@ textarea:focus {
     position: relative;
     overflow: hidden;
 }
+.st-color {
+    color: #9F0466;
+}
 
 /*--========== End General Style ==========--*/
 
@@ -914,9 +917,37 @@ textarea:focus {
     color: #512431;
     padding: 10px 0;
 }
-
-
 /*--========== End FSC Page Style ==========--*/
+
+/*--========== Sucarsales Page Style ==========--*/
+
+.subscribe-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.subscribe-content .sm-title {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000000;
+    border-bottom: 1px solid #9F0466;
+    display: inline-block;
+}
+.subscribe-content ul {
+    margin-bottom: 15px;
+}
+.subscribe-content ul li {
+    font-weight: 500;
+    font-size: 14px;
+}
+.subscribe-content h6 {
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/*--========== End Sucarsales Page Style ==========--*/
 
 
 
