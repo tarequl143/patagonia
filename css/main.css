@@ -4,7 +4,7 @@
 
 /*
 font-family: 'Raleway', sans-serif;  
-font-family: 'Poppins', sans-serif;  
+font-family: 'Poppins', sans-serif;   
 */
 
 /*--========== End Google Fonts ==========--*/
@@ -891,9 +891,7 @@ textarea:focus {
 .fsc-table {
     margin: 60px 0 0 0;
 }
-.fsc-table h4 {
-    text-align: left;
-}
+
 .fsc-table .table {
     background-color: #ffffff;
 }
@@ -927,7 +925,7 @@ textarea:focus {
     color: #000000;
     margin-bottom: 20px;
 }
-.subscribe-content .sm-title {
+.sm-title {
     font-size: 16px;
     margin-bottom: 10px;
     color: #000000;
@@ -948,6 +946,47 @@ textarea:focus {
 }
 
 /*--========== End Sucarsales Page Style ==========--*/
+
+/*--========== Artcenter Page Style ==========--*/
+.dac-patagonia-slider .single-slide {
+    border-right: 1px solid #ffffff;
+}
+.dac-patagonia-slider .single-slide h6 {
+    background-color: #231F20;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+}
+.dac-patagonia-wrapper {
+    position: relative;
+}
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    text-align: center;
+    background-color: #B4286C;
+    color: #ffffff;
+    margin-bottom: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.slider-arrow i {
+    font-size: 20px;
+    line-height: 60px;
+}
+.slider-arrow.left {
+    left: 0;
+}
+.slider-arrow.right {
+    right: 0;
+}
+
+
+/*--========== End Artcenter Page Style ==========--*/
 
 
 
