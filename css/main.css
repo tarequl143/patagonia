@@ -143,94 +143,28 @@ textarea:focus {
     -o-transform: translateY(10px);
     transform: translateY(10px);
 }
-
-
-
-.hamburger-bar {
+.mobile-header {
     display: none;
-    cursor: pointer;
-}
-
-.hamburger-bar p {
-    display: block;
-    margin-bottom: 5px;
-    width: 32px;
-    height: 3px;
-    background-color: #F02231;
-}
-
-.mobile-menu {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    width: 100%;
-    display: none;
-    z-index: 9;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.mobile-menu > ul {
-    background-color: #0A1822;
-}
-
-.mobile-menu ul li a {
-    padding: 8px 15px;
-    display: block;
-    color: #ffffff;
-    border-bottom: 1px solid #ffffff;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-.mobile-menu ul li:hover > a {
-    color: #F02231;
-}
-
-.mobile-menu > ul > li:last-child a {
-    border-bottom: none;
-}
-
-.mobile-menu li.tqi-dropdown > a {
-    position: relative;
-}
-
-.mobile-menu li.tqi-dropdown a .m-drop {
-    position: absolute;
-    right: 0px;
-    top: 0;
-    font-size: 14px;
-    color: #ffffff;
-    font-weight: 300;
-    background-color: #0A1822;
-    width: 40px;
-    height: 100%;
     text-align: center;
-    border-left: 1px solid #ffffff;
+}
+.m-logo {
+    max-width: 300px;
+    border: 6px solid rgba(0,0,0, 0.1);
     display: inline-block;
-    line-height: 39px;
-    z-index: 2;
+    margin-top: 10px;
 }
-
-.mobile-menu .m-drop:hover {
-    color: #F02231 !important;
+.m-menu {
+    padding: 15px 0 8px 0;
 }
-
-.mobile-menu li.tqi-dropdown ul {
+.m-menu ul li {
+    margin-bottom: 5px;
+}
+.m-menu ul li a {
+    padding: 5px 0;
+}
+.m-menu ul li a:before {
+    content: none !important;
     display: none;
-}
-
-.mobile-menu li.tqi-dropdown ul li a {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.mobile-menu li.tqi-dropdown ul li.tqi-dropdown ul li a {
-    padding-left: 45px;
-    padding-right: 45px;
 }
 
 .fa-minus:before {
@@ -779,6 +713,7 @@ textarea:focus {
     background-color: #E8E5E4;
     color: #000000;
     font-size: 16px;
+    text-align: center;
     text-transform: uppercase;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -1045,26 +980,121 @@ textarea:focus {
 
 
 @media only screen and (max-width:1199px) {
-    
+    .header-area .container {
+        display: none;
+    }
+    .mobile-header.container {
+        display: block;
+    }
+    .footer-area .col-md-10,
+    .footer-area .col-md-2 {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .footer-menu {
+        text-align: center !important;
+        padding: 10px 0;
+    }
+    .footer-left ul li {
+        margin-bottom: 5px;
+    }
 }
 
 @media only screen and (max-width:1024px) {
-    .main-menu {
-        display: none;
-    }
-    .hamburger-bar {
-        display: inline-block;
-        margin-top: 28px;
-    }
 
 }
 
 @media only screen and (max-width:991px) {
-    
+    .contactto-left {
+        margin: 0 0 40px 0;
+    }
+    .newsletter-box {
+        flex-direction: column;
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+    .hover-blurb h3 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .subscribe-content h3 {
+        font-size: 28px;
+    }
+    .email-address-box {
+        flex-direction: column;
+        width: max-content;
+        margin: 0 auto 40px;
+    }
 }
 
 @media only screen and (max-width:767px) {
-    
+    .sub-categories-box {
+        width: 400px;
+    }
+    .chat-btn {
+        right: 50px;
+    }
+    .pedir-presupuesto {
+        right: 120px;
+    }
+    .banner-caption-content h3,
+    .contents h3 {
+        font-size: 28px;
+    }
+    .banner-caption-content p,
+    .espacios p,
+    .grandes ul li,
+    .ecologia p,
+    .contents h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .garantia-blurb h4 {
+        font-size: 24px;
+    }
+    .center-dac-logo {
+        margin: 25px 0;
+    }
+    .footer-left ul li {
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+    }
+    .footer-left ul li:first-child:before {
+        content: none;
+        display: none;
+    }
+    .contacto-form div .tqi-form-group:first-child label i {
+        display: none;
+    }
+    .grandes-caption {
+        width: 80%; 
+    }
+    .banner-caption-content {
+        margin: 25px 0;
+    }
+    .banner-logo {
+        text-align: center;
+    }
+    .banner-logo img {
+        max-width: 200px;
+    }
+    .ragantia-bottom {
+        padding: 60px 0 20px 0;
+    }
+    .garantia-blurb {
+        padding: 0 15px 40px 15px;
+    }
+    .single-blurb {
+        margin-bottom: 30px;
+    }
+    .map-area iframe {
+        height: 300px;
+    }
+    .subscribe-content {
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width:575px) {

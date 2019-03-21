@@ -2,21 +2,6 @@ jQuery(function ($) {
 
     "use strict"
 
-    /*--===== Mobile Menu =====--*/
-    var MenuContent = $(".main-menu").html();
-    $(".mobile-menu").html(MenuContent);
-    $(".hamburger-bar").on("click", function () {
-        $(".mobile-menu").slideToggle(400);
-    });
-    $(".tqi-dropdown > a").on("click", function () {
-        return false;
-    });
-    $(".m-drop").on("click", function () {
-        $(this).children("i").toggleClass("fa-minus").parent().parent().parent("li.tqi-dropdown").children("ul").slideToggle(300);
-        $(this).parent().parent("li.tqi-dropdown").siblings("li.tqi-dropdown").children("ul").slideUp(300);
-        $(this).parents("li.tqi-dropdown").siblings("li.tqi-dropdown").children("a").find("i").removeClass("fa-minus");
-    });
-
     /*--===== Slide Boxes Script =====--*/
     $(window).on("scroll", function () {
         var scroll = $(this).scrollTop();
@@ -52,6 +37,21 @@ jQuery(function ($) {
         return false;
     });
 
+    function SubCatControl() {
+        var HeaderHeight = $(".header-area").outerHeight();
+        var windowHeight = $(window).height();
+        console.log(windowHeight);
+        var H_Height = windowHeight - HeaderHeight;
+        $(".sub-categories-box").css({
+            'top': HeaderHeight,
+            'height': H_Height
+        });
+    }
+    SubCatControl();
+    $(window).resize(function () {
+        SubCatControl();
+    });
+
     /*--===== End Slide Boxes Script =====--*/
 
     $('#file').change(function () {
@@ -72,29 +72,21 @@ jQuery(function ($) {
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
                 }
-    },
+            },
             {
                 breakpoint: 600,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
                 }
-    },
+            },
             {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
                 }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+            }
+        ]
     });
 
 
