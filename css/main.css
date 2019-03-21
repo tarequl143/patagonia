@@ -940,9 +940,11 @@ textarea:focus {
     font-size: 14px;
 }
 .subscribe-content h6 {
-    margin-bottom: 10px;
     font-weight: 700;
     color: #000000;
+}
+.subscribe-content h6 + i {
+    color: #AB0061;
 }
 
 /*--========== End Sucarsales Page Style ==========--*/
@@ -984,9 +986,52 @@ textarea:focus {
 .slider-arrow.right {
     right: 0;
 }
-
-
 /*--========== End Artcenter Page Style ==========--*/
+
+/*--========== Contacto Page Style ==========--*/
+
+.contacto-form textarea {
+    min-height: 200px;
+}
+.contacto-form p {
+    margin-bottom: 0;
+}
+.contactto-left {
+    position: relative;
+    background-color: #ffffff;
+    padding: 12px 0;
+}
+.contactto-left:before {
+    position: absolute;
+    content: "";
+    border-top: 10px solid #ffffff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.contactto-left p {
+    border-bottom: 1px solid #AB0061;
+    margin: 0;
+    line-height: 1.4;
+}
+.contacto-form div .tqi-form-group:first-child label {
+    position: relative;
+}
+.contacto-form div .tqi-form-group:first-child label i {
+    position: absolute;
+    top: 22px;
+    right: 0;
+    font-size: 24px;
+    color: #AB0061;
+}
+
+/*--========== End Contacto Page Style ==========--*/
 
 
 
