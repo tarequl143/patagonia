@@ -37,26 +37,30 @@ jQuery(function ($) {
         return false;
     });
 
-    function SubCatControl() {
-        var HeaderHeight = $(".header-area").outerHeight();
-        var windowHeight = $(window).height();
-        console.log(windowHeight);
-        var H_Height = windowHeight - HeaderHeight;
-        $(".sub-categories-box").css({
-            'top': HeaderHeight,
-            'height': H_Height
-        });
-    }
-    SubCatControl();
-    $(window).resize(function () {
-        SubCatControl();
-    });
+//    function SubCatControl() {
+//        var HeaderHeight = $(".header-area").outerHeight();
+//        var windowHeight = $(window).height();
+//        console.log(windowHeight);
+//        var H_Height = windowHeight - HeaderHeight;
+//        $(".sub-categories-box").css({
+//            'top': HeaderHeight,
+//            'height': H_Height
+//        });
+//    }
+//    SubCatControl();
+//    $(window).resize(function () {
+//        SubCatControl();
+//    });
 
     /*--===== End Slide Boxes Script =====--*/
 
     $('#file').change(function () {
         var filename = $('#file')[0].files[0]['name'];
         $('.file-name').html(filename);
+    });
+    
+    $(".m-menu-toggle-bar").on("click", function(){
+        $(".m-menu").slideToggle(400); 
     });
 
     $(".dac-patagonia-slider").slick({
