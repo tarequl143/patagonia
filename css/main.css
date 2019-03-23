@@ -545,7 +545,7 @@ textarea:focus {
     padding: 30px;
     box-sizing: border-box;
     box-shadow: 0 0 5px #999999;
-    max-height: 100vh;
+    height: 100vh;
     overflow-y: auto;
     opacity: 0;
     visibility: hidden;
@@ -600,6 +600,10 @@ textarea:focus {
 }
 .sub-categories-box ul li a:hover {
     color: #A50063;
+}
+.sub-categories-box .close-box {
+    right: 0;
+    left: auto;
 }
 .newsletter-box {
     margin-bottom: 10px;
@@ -1049,9 +1053,6 @@ textarea:focus {
     }
 }
 
-@media only screen and (max-width:1024px) {
-
-}
 
 @media only screen and (max-width:991px) {
     .contactto-left {
@@ -1099,11 +1100,16 @@ textarea:focus {
     .m-menu ul li:last-child a {
         border-bottom: none;
     }
+    .sub-categories-box {
+        z-index: 9999999999;
+        top: 0 !important;
+    }
 }
 
 @media only screen and (max-width:767px) {
     .sub-categories-box {
-        width: 400px;
+        max-width: 400px;
+        width: 100%;
     }
     .chat-btn {
         right: 50px;
@@ -1168,6 +1174,14 @@ textarea:focus {
     .subscribe-content {
         margin-top: 30px;
     }
+    .sub-categories-box-bottom {
+        padding-bottom: 0;
+    }
+    .social-media,
+    .contact-info {
+        padding-top: 15px;
+    }
+    
 }
 
 @media only screen and (max-width:575px) {

@@ -25,6 +25,11 @@ jQuery(function ($) {
         $(data_close_div).toggleClass("show-from-left");
         $(".show-box").removeClass("purple-text");
     });
+    $(".sub-categories-box .close-box").on("click", function () {
+        var data_close_div = $(this).data("div");
+        $(data_close_div).toggleClass("tqi-visible");
+        $("a[data-id='"+data_close_div+"']").toggleClass("active");
+    });
 
     $(".tqi-sub").on("click", function () {
         var elem_id = $(this).data("id");
@@ -63,6 +68,7 @@ jQuery(function ($) {
         $(".m-menu").slideToggle(400); 
     });
 
+    if(($(".dac-patagonia-slider")).length){
     $(".dac-patagonia-slider").slick({
         dots: false,
         infinite: true,
@@ -92,6 +98,7 @@ jQuery(function ($) {
             }
         ]
     });
+    }
 
 
 }(jQuery));
