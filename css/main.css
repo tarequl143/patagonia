@@ -492,7 +492,7 @@ textarea:focus {
     font-weight: 500 !important;
     line-height: 20px;
     margin-bottom: 0;
-    color: #212529 !important;
+    color: #A40062 !important;
 }
 .right-before {
     position: relative;
@@ -538,6 +538,11 @@ textarea:focus {
     -o-transition: all 0.2s;
     transition: all 0.2s;
 }
+.sub-categories-box-bottom {
+    padding: 15px 0;
+    border-top: 1px solid #999999;
+    margin-top: 40px;
+}
 .tqi-visible {
     opacity: 1;
     visibility: visible;
@@ -557,7 +562,7 @@ textarea:focus {
 .sub-categories-box h3 {
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .sub-categories-box .subtitle {
     font-size: 16px;
@@ -570,7 +575,7 @@ textarea:focus {
     margin-bottom: 15px;
 }
 .sub-categories-box ul li a {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
     color: #000000;
     display: inline-block;
@@ -580,6 +585,7 @@ textarea:focus {
 }
 .newsletter-box {
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 .newsletter-box h5 {
     font-size: 16px;
@@ -880,6 +886,30 @@ textarea:focus {
 }
 .subscribe-content h6 + i {
     color: #AB0061;
+}
+.map-area {
+    position: relative;
+}
+.map-address-box {
+    background-color: #9F0466;
+    display: inline-block;
+    padding: 12px 30px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+}
+.map-address-box h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.map-address-box p {
+    line-height: 1.3;
+    font-size: 14px;
+    color: #ffffff;
 }
 
 /*--========== End Sucarsales Page Style ==========--*/
