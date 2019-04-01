@@ -92,41 +92,220 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="map-area">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57402.13787871827!2d-73.0986545124912!3d-36.765002785954515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96683569902a5369%3A0x6db08547b12ce264!2z4Kak4Ka-4Kay4KaV4Ka54KeB4Kef4Ka-4Kao4KeLLCBUYWxjYWh1YW5vLCBCw61vIELDrW8gUmVnaW9uLCDgpprgpr_gprLgpr8!5e0!3m2!1sbn!2sbd!4v1552748938889" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div id="mapContainer">
+                                <div id="mapCanvas"></div>
+                            </div>
                             <div class="map-address-box">
-                                <h6>- SHOWROOM ARENALES -</h6>
-                                <p>Tel. (011) 4811.7726</p>
-                                <p>Lunes a viernes de 9.30 a 20 hs.</p>
-                                <p>sábado de 9.30 a 15 hs.</p>
+                                <p></p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="subscribe-content text-center">
                             <h3>SUCURSALES</h3>
-                            <div class="sm-title">ARGENTINA</div>
-                            <br>
-                            <h6>CABA</h6>
-                            <i class="fas fa-angle-down"></i>
-                            <ul>
-                                <li>Av. Cordoba 3942 - DESIGN &amp; ART CENTER</li>
-                                <li>Av. Libertador 6699 </li>
-                                <li class="st-color">Arenales 1101</li>
-                            </ul>
-                            <ul>
-                                <li>GRAN BUENOS AIRES</li>
-                                <li>CORDOBA</li>
-                                <li>SANTA FE</li>
-                                <li>TUCUMAN</li>
-                                <li class="st-color">MISIONES</li>
-                                <li>NEUQUEN</li>
-                                <li>MENDOZA</li>
-                                <li>RIO NEGRO</li>
-                                <li>TIERRA DEL FUEGO</li>
-                            </ul>
-                            <div class="sm-title">PARAGUAY</div>
-                            <br>
-                            <div class="sm-title">ESTADOS UNIDOS</div>
+                            <div class="tqi-accordion">
+                                <div class="single-accordion-block">
+                                    <div class="sm-title">ARGENTINA</div>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="map-link" data-lat="-34.77734" data-lng="-58.16132">CABA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Av. Cordoba 3942 - DESIGN &amp; ART CENTER Av. Libertador 6699 Arenales 1101</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="" class="map-link" data-lat="-34.59779" data-lng="-58.42259">GRAN BUENOS AIRES</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1101</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link" data-lat="-34.55048" data-lng="-58.45299">CORDOBA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1102</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link" data-lat="-34.58378" data-lng="-58.4325">SANTA FE</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1102</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link" data-lat="-34.59434" data-lng="-58.38276">TUCUMAN</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1104</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link" data-lat="-34.63787" data-lng="-58.48052">MISIONES</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1105</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">NEUQUEN</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1106</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">MENDOZA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1107</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">RIO NEGRO</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1108</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">TIERRA DEL FUEGO</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1109</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-accordion-block">
+                                    <div class="sm-title">Paraguay</div>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="map-link">CABA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Av. Cordoba 3942 - DESIGN &amp; ART CENTER Av. Libertador 6699 Arenales 1101</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="" class="map-link">GRAN BUENOS AIRES</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1101</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">CORDOBA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1102</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">SANTA FE</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1102</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">TUCUMAN</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1104</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">MISIONES</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1105</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">NEUQUEN</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1106</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">MENDOZA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1107</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">RIO NEGRO</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1108</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">TIERRA DEL FUEGO</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1109</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="single-accordion-block">
+                                    <div class="sm-title">ESTADOS UNIDOS</div>
+                                    <ul>
+                                        <li>
+                                            <a href="" class="map-link">CABA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Av. Cordoba 3942 - DESIGN &amp; ART CENTER Av. Libertador 6699 Arenales 1101</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="" class="map-link">GRAN BUENOS AIRES</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1101</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">CORDOBA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1102</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">SANTA FE</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1102</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">TUCUMAN</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1104</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">MISIONES</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1105</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">NEUQUEN</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1106</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">MENDOZA</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1107</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">RIO NEGRO</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1108</p>
+                                            </div>
+                                        </li>
+                                        <li><a href="" class="map-link">TIERRA DEL FUEGO</a>
+                                            <div class="address-text">
+                                                <i class="fas fa-angle-down"></i>
+                                                <p>Arenales 1109</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -354,6 +533,103 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDi8L7HnJAOYnTn01kGyxUCIKUMPks_KSA"></script>
+    <script type="text/javascript">
+        function initMap() {
+            var map;
+            var bounds = new google.maps.LatLngBounds();
+            var mapOptions = {
+                mapTypeId: 'roadmap'
+            };
+
+            // Display a map on the web page
+            map = new google.maps.Map(document.getElementById("mapCanvas"), mapOptions);
+            map.setTilt(50);
+
+            // Multiple markers location, latitude, and longitude
+            var markers = [
+                ['SHOWROOM FONTENLA CASA', -34.77734, -58.16132],
+                ['NUEVO DESIGN & ART CENTER PATAGONIA FLOORING', -34.59779, -58.42259],
+                ['SHOWROOM LIBERTADOR', -34.55048, -58.45299],
+                ['SHOWROOM PALERMO', -34.58378, -58.4325],
+                ['SHOWROOM ARENALES', -34.59434, -58.38276],
+                ['SHOWROOM ALBERDI', -34.63787, -58.48052]
+            ];
+
+            // Info window content
+            var infoWindowContent = [
+                ['<div class="info_content">' +
+                    '<h3>Brooklyn Museum</h3>' +
+                    '<p>The Brooklyn Museum is an art museum located in the New York City borough of Brooklyn.</p>' + '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>Brooklyn Public Library</h3>' +
+                    '<p>The Brooklyn Public Library (BPL) is the public library system of the borough of Brooklyn, in New York City.</p>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>Prospect Park Zoo</h3>' +
+                    '<p>The Prospect Park Zoo is a 12-acre (4.9 ha) zoo located off Flatbush Avenue on the eastern side of Prospect Park, Brooklyn, New York City.</p>' +
+                    '</div>'
+                ],
+                ['<div class="info_content">' +
+                    '<h3>Cusomt</h3>' +
+                    '<p>The Prospect Park Zoo is a 12-acre (4.9 ha) zoo located off Flatbush Avenue on the eastern side of Prospect Park, Brooklyn, New York City.</p>' +
+                    '</div>'
+                ]
+            ];
+
+            // Add multiple markers to map
+            var infoWindow = new google.maps.InfoWindow(),
+                marker, i;
+
+            // Place each marker on the map  
+            for (i = 0; i < markers.length; i++) {
+                var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                bounds.extend(position);
+                marker = new google.maps.Marker({
+                    position: position,
+                    icon: 'img/mapmarker.png',
+                    map: map,
+                    title: markers[i][0]
+                });
+
+                // Add info window to marker    
+                google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                    return function() {
+                        infoWindow.setContent(infoWindowContent[i][0]);
+                        infoWindow.open(map, marker);
+                    }
+                })(marker, i));
+
+                $('.map-link').on('click', function() {
+                    var latitud = $(this).data("lat");
+                    var longitud = $(this).data("lng");
+                    map.setCenter({
+                        lat: latitud,
+                        lng: longitud
+                    });
+                    map.setZoom(15);
+                    return false;
+                });
+                
+
+                // Center the map to fit all markers on the screen
+                map.fitBounds(bounds);
+            }
+
+            // Set zoom level
+            var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function(event) {
+                this.setZoom(14);
+                google.maps.event.removeListener(boundsListener);
+            });
+
+        }
+        // Load initialize function
+        google.maps.event.addDomListener(window, 'load', initMap);
+
+    </script>
+
 
 </body>
 
