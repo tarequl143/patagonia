@@ -100,23 +100,33 @@ jQuery(function ($) {
     });
     }
     
-    $(".tqi-accordion .single-accordion-block:first-child ul").show();
-    $(".tqi-accordion .single-accordion-block:first-child ul li:first-child").addClass("sub-active");
+    /*--====== Sucursales Page Script =====--*/
+    $(".tqi-accordion .single-accordion-block:first-child > ul").show();
+    $(".tqi-accordion .single-accordion-block:first-child > ul li:first-child ").show();
+    $(".tqi-accordion .single-accordion-block:first-child ul li:first-child").addClass("sub-active").children(".offices").show();
     $(".single-accordion-block .sm-title").on("click", function(){
         $(this).siblings("ul").slideToggle().parents(".single-accordion-block").siblings().children("ul").slideUp(); 
     });
     
-    $(".single-accordion-block ul li a").on("click", function(){
-        $(this).parent().addClass("sub-active").children(".address-text").slideDown().parent().siblings().removeClass("sub-active").children(".address-text").slideUp().parents(".single-accordion-block").siblings().find("li").removeClass("sub-active").children(".address-text").slideUp();
-        LoadAddressInMap();
+    $(".single-accordion-block ul > li > h5").on("click", function(){
+        $(this).siblings().slideToggle().parent().toggleClass("sub-active").siblings().removeClass("sub-active").children(".offices").slideUp();
+    });
+    
+    $(".single-accordion-block .map-link").on("click", function(){
+        $(".map-link").parent().removeClass("sub-active");
+        $(this).parent().addClass("sub-active");
+        LoadAddressInMap(this);
         return false;
     });
     
-    function LoadAddressInMap(){
-        var GetAddress= $(".sub-active .address-text p").text();
+    $(".map-address-box p").text($(".sub-active a").data("address"));
+    function LoadAddressInMap(value){
+        var GetAddress= $(value).data("address");
         $(".map-address-box p").text(GetAddress);
+        console.log(GetAddress);
     }
     LoadAddressInMap();
+    /*--====== Sucursales Page Script =====--*/
 
 
 }(jQuery));

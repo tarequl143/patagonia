@@ -895,8 +895,11 @@ textarea:focus {
     border-bottom: 1px solid #9F0466;
     display: inline-block;
 }
-.subscribe-content ul {
-    margin-bottom: 15px;
+.subscribe-content .single-accordion-block > ul {
+    margin: 8px 0 10px 0;
+}
+.offices > ul {
+    margin-bottom: 10px;
 }
 .subscribe-content ul li {
     font-weight: 500;
@@ -947,33 +950,40 @@ textarea:focus {
 .single-accordion-block .sm-title {
     cursor: pointer;
 }
-.single-accordion-block .sub-active a {
-    margin-bottom: 15px;
+.single-accordion-block ul > li > h5 {
+    font-weight: 600;
     font-size: 16px;
-    font-weight: 700;
-}
-.single-accordion-block .sub-active i {
-    color: #AB0061;
-}
-.single-accordion-block li a {
-    font-weight: 500;
-    font-size: 14px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
     color: #333333;
+    cursor: pointer;
 }
-.single-accordion-block ul {
+.single-accordion-block .sub-active h5 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.single-accordion-block li a.map-link {
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 16px;
+    color: #333333;
+    display: block;
+    padding: 3px 0;
+}
+.single-accordion-block .sub-active > a,
+.single-accordion-block .sub-active i {
+    color: #AB0061 !important;
+}
+.single-accordion-block > ul {
     display: none;
 }
 .single-accordion-block ul li:hover > a {
     color: #9F0466;
 }
-.single-accordion-block ul li .address-text {
+.offices {
     display: none;
-    padding: 0 0 10px 0;
-}
-.single-accordion-block ul li.sub-active .address-text {
-    display: block;
 }
 
 
@@ -1046,10 +1056,11 @@ textarea:focus {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
-.contactto-left p {
+.contactto-left a {
     border-bottom: 1px solid #AB0061;
     margin: 0;
     line-height: 1.4;
+    color: #212529;
 }
 .contacto-form div .tqi-form-group:first-child label {
     position: relative;
