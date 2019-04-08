@@ -428,7 +428,6 @@ textarea:focus {
     margin-bottom: 0;
     font-size: 16px;
     font-weight: 500;
-    text-transform: capitalize;
 }
 .tqi-form-group input,
 .tqi-form-group textarea {
@@ -783,6 +782,9 @@ textarea:focus {
 .banner-area {
     position: relative;
 }
+.banner-area > img {
+    width: 100%;
+}
 .banner-area.gray-bg {
     padding: 80px 0;
 }
@@ -949,6 +951,7 @@ textarea:focus {
 }
 .single-accordion-block .sm-title {
     cursor: pointer;
+    text-transform: uppercase;
 }
 .single-accordion-block ul > li > h5 {
     font-weight: 600;
@@ -997,8 +1000,13 @@ textarea:focus {
 .dac-patagonia-slider .single-slide h6 {
     background-color: #231F20;
     color: #ffffff;
-    padding: 10px;
+    padding: 0 10px;
     font-size: 14px;
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
 }
 .dac-patagonia-wrapper {
     position: relative;
@@ -1074,6 +1082,165 @@ textarea:focus {
 }
 
 /*--========== End Contacto Page Style ==========--*/
+
+/*--========== Collection Pages Style ==========--*/
+.collection-menu {
+    padding: 15px 35px;
+    display: inline-block;
+    text-align: center;
+}
+.collection-menu h2 {
+    font-size: 42px;
+    font-weight: 900;
+    color: #000000;
+    margin: 0 0 0 0;
+    text-transform: uppercase;
+}
+.collection-menu ul li {
+    display: inline-block;
+    padding: 0 10px;
+    position: relative;
+}
+.collection-menu ul li:before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 90%;
+    background-color: #ffffff;
+    right: -3px;
+    top: 10%;
+}
+.collection-menu ul li:last-child:before {
+    content: none;
+}
+.collection-menu ul li a {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1;
+}
+.collection-part {
+    background-color: #EAE6E4;
+    display: none;
+}
+.collection-main {
+    position: relative;
+    background-image: url(../img/collections/millenium/main-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: block;
+}
+
+.collection-main .collection-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    background-color: #D1C7BD;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.collection-part .contactto-left a {
+    color: #ffffff;
+}
+.deep-gray {
+    background-color: #3F3D3C;
+}
+.deep-gray:before {
+    border-top-color: #3F3D3C;
+}
+.light-gray {
+    background-color: #96918D;
+}
+.light-gray:before {
+    border-top-color: #96918D;
+}
+.rose {
+    background-color: #9F0466;
+}
+.rose:before {
+    border-top-color: #9F0466;
+}
+.rose a {
+    border-bottom-color: #3F3D3C;
+}
+.collection-info-top {
+    padding: 60px 0 10px 0;
+}
+.collection-info-content,
+.collection-fotos-content {
+    padding: 40px 0;
+}
+.collection-info-content p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.collection-info-content .info-table{
+    margin-top: 100px;
+}
+.collection-info-content .info-table h5 {
+    margin-bottom: 15px;
+}
+.tqi-tab {
+    cursor: pointer;
+}
+.collection-menu ul li a:hover {
+    color: #9F0466;
+}
+.collection-fotos .carousel-control-next {
+    right: 15px;
+    transform: none;
+}
+.collection-fotos .carousel-control-prev {
+    left: 15px;
+    transform: none;
+}
+.collection-fotos .carousel-indicators {
+    width: 100%;
+    position: relative;
+    left: inherit;
+    margin: 0;
+    bottom: inherit;
+    right: inherit;
+    top: inherit;
+    z-index: inherit;
+}
+.collection-fotos .carousel-indicators li {
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    padding: 0 6px 0 0;
+    background-color: transparent;
+    text-indent: inherit;
+}
+.collection-fotos .carousel-indicators li:before,
+.collection-fotos .carousel-indicators li:after {
+    content: none;
+}
+.collection-fotos .carousel-indicators li.active .carousel-single-indicator {
+    border: 3px solid #9F0466;
+}
+.fotos-heading {
+    margin-bottom: 15px;
+}
+.fotos-heading h6 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+}
+.fotos-heading p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3F3D3C;
+}
+/*--========== End Collection Pages Style ==========--*/
+
 
 
 

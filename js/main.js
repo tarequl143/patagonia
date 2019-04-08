@@ -119,14 +119,24 @@ jQuery(function ($) {
         return false;
     });
     
-    $(".map-address-box p").text($(".sub-active a").data("address"));
+    $(".map-address-box p").html($(".sub-active a").data("address"));
     function LoadAddressInMap(value){
         var GetAddress= $(value).data("address");
-        $(".map-address-box p").text(GetAddress);
-        console.log(GetAddress);
+        $(".map-address-box p").html(GetAddress);
     }
     LoadAddressInMap();
     /*--====== Sucursales Page Script =====--*/
+    
+    $(".tqi-tab").on("click", function(){
+        var SelectTab = $(this).data("tab");
+        $(".collection-part").css({
+            "display": "none",
+        });
+        $(SelectTab).css({
+            "display": "block", 
+        });
+        return false;
+    });
 
 
 }(jQuery));
