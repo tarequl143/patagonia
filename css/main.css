@@ -995,7 +995,7 @@ textarea:focus {
 
 /*--========== Artcenter Page Style ==========--*/
 .dac-patagonia-slider .single-slide {
-    border-right: 1px solid #ffffff;
+    border: 1px solid #ffffff;
 }
 .dac-patagonia-slider .single-slide h6 {
     background-color: #231F20;
@@ -1030,10 +1030,10 @@ textarea:focus {
     line-height: 60px;
 }
 .slider-arrow.left {
-    left: 0;
+    left: 1px;
 }
 .slider-arrow.right {
-    right: 0;
+    right: 1px;
 }
 /*--========== End Artcenter Page Style ==========--*/
 
@@ -1138,6 +1138,8 @@ textarea:focus {
     top: 50%;
     left: 50%;
     z-index: 2;
+    width: 600px;
+    max-width: 80%;
     background-color: #D1C7BD;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -1168,6 +1170,14 @@ textarea:focus {
 }
 .rose a {
     border-bottom-color: #3F3D3C;
+}
+.contactto-left.deep-gray:hover,
+.contactto-left.light-gray:hover {
+    background-color: #9F0466;
+}
+.contactto-left.deep-gray:hover:before,
+.contactto-left.light-gray:hover:before {
+    border-top-color: #9F0466;
 }
 .collection-info-top {
     padding: 60px 0 10px 0;
@@ -1209,6 +1219,7 @@ textarea:focus {
     right: inherit;
     top: inherit;
     z-index: inherit;
+    justify-content: flex-start;
 }
 .collection-fotos .carousel-indicators li {
     width: inherit;
@@ -1224,6 +1235,9 @@ textarea:focus {
 }
 .collection-fotos .carousel-indicators li.active .carousel-single-indicator {
     border: 3px solid #9F0466;
+}
+.collection-fotos .carousel-indicators li {
+    margin-bottom: 6px;
 }
 .fotos-heading {
     margin-bottom: 15px;
@@ -1273,6 +1287,10 @@ textarea:focus {
     .footer-left ul li {
         margin-bottom: 5px;
     }
+    .collection-menu h2 {
+        font-size: 32px;
+    }
+    
 }
 
 
@@ -1325,6 +1343,10 @@ textarea:focus {
     .sub-categories-box {
         z-index: 9999999999;
         top: 0 !important;
+    }
+    .collection-info .collection-menu,
+    .collection-fotos .collection-menu {
+        margin-bottom: 30px;
     }
 }
 
@@ -1402,6 +1424,27 @@ textarea:focus {
     .social-media,
     .contact-info {
         padding-top: 15px;
+    }
+    .collection-menu {
+        width: 90% !important;
+        max-width: inherit !important;
+        padding-top: 20px;
+    }
+    .collection-menu h2 {
+        font-size: 32px;
+    }
+    .collection-menu ul li {
+        padding: 0 8px;
+        margin: 5px 0;
+    }
+    .collection-fotos .carousel-indicators li {
+        padding: 0 3px;
+    }
+    .collection-fotos .carousel-indicators {
+        margin-bottom: 30px;
+    }
+    .collection-fotos-content .p-0 {
+        padding: 0 15px !important;
     }
     
 }
